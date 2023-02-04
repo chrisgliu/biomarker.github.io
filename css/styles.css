@@ -10,6 +10,16 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ .center-block{
+  justify-content: center;
+  align-items: center;
+ }
+ .center-block-text {
+  display: inline-block; max-width:75%; text-align: left;
+  padding: 10px;
+  box-shadow: 5px 7px #00AAE7;
+ }
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -236,7 +246,7 @@ sup {
 }
 
 a {
-  color: #6270DC;
+  color: #00AAE7;
   text-decoration: underline;
 }
 a:hover {

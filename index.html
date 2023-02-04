@@ -28,8 +28,11 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ckd">CKD</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ckd">WIKI2</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ckd">WIKI3</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ckd">WIKI4</a></li>
                         <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contribute">Contribute</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -46,38 +49,54 @@
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container">
+              
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase"> 1,000,000+ </h2>
-                    <h3 class="section-subheading text-muted">Total papers with mentions of the word "biomarker" listed in PubMed</h3>
+                    <h2 class="section-heading text-uppercase"> Chronic Kidney Disease </h2>
+                    <div class="center-block">
+                            <h3 class="section-subheading text-muted center-block-text">
+                                Published in 2022, the following meta-analysis serves as the largest most comprehensible summary of biomarkers for CKD:
+                                
+                                <a href="https://journals.lww.com/jasn/Abstract/2022/09000/Systematic_Review_and_Meta_Analysis_of_Plasma_and.10.aspx">
+                                    Systematic Review and Meta-Analysis of Plasma and Urine Biomarkers for CKD Outcomes
+                                </a>
+                                <br><br>
+                                Investigators are encouraged to contribute to this Wiki, submitting and publishing data as part of a living 
+                                <a href="#contribute">database</a>. Each biomarker has its own Wiki page with a statiscal analysis.
+                            </h3>
+                    </div>
+                    
                 </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa-sharp fa-solid fa-1 fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Find</h4>
-                        <p class="text-muted">Use (Insert Tool) for Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa-sharp fa-solid fa-2 fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Compare</h4>
-                        <p class="text-muted">Use (Insert Tool) for Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa-sharp fa-solid fa-3 fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Research</h4>
-                        <p class="text-muted">Use (Insert Tool) for Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                </div>
+            </div>
 
-                <br>
+            <div class="container">
+
+                <style>
+
+.mininav {
+  display: flex;
+  justify-content:space-between; 
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #cfd8dc; 
+}
+.mininav ul {
+  display: flex;
+  list-style: none; 
+}
+.mininav li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+                </style>
+                <nav class="mininav">
+                    <ul>
+                        <li><button class="btn btn-secondary">Show All</button></li>
+                        <li><button class="btn btn-secondary">Show Plasma</button></li>
+                        <li><button class="btn btn-secondary">Show Urine</button></li>
+                    </ul>
+                </nav>
+
                 <hr>
                 <canvas id="popChart"></canvas>
                 <hr>
@@ -126,9 +145,65 @@ var popData = {
 
 var bubbleChart = new Chart(popCanvas, {
   type: 'bubble',
-  data: popData
+  data: popData,
+  options: {
+    scales: {
+        yAxes: [{
+            scaleLabel: {
+                display: true,
+                labelString: 'Number of Studies'
+            }
+        }],
+        xAxes: [{
+            scaleLabel: {
+                display: true,
+                labelString: 'Pooled Relative Risks'
+            }
+        }]
+    }   
+  }
 });
 </script>
+
+</div>
+</section>
+            
+       
+
+<section class="page-section" id="services">
+    <div class="container">
+
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase"> 1,000,000+ </h2>
+            <h3 class="section-subheading text-muted">Total papers with mentions of the word "biomarker" listed in PubMed</h3>
+        </div>
+        
+        <div class="row text-center">
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa-sharp fa-solid fa-1 fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">Find</h4>
+                <p class="text-muted">Use (Insert Tool) for Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa-sharp fa-solid fa-2 fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">Compare</h4>
+                <p class="text-muted">Use (Insert Tool) for Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa-sharp fa-solid fa-3 fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">Research</h4>
+                <p class="text-muted">Use (Insert Tool) for Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            </div>
+        </div>
 
             </div>
         </section>
