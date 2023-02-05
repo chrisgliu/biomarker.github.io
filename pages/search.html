@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../css/styles.css" rel="stylesheet" />
+</head>
+<body>
+
+ <!-- Search-->
+ <header class="masthead">
+    <div class="container">
+        
+        <div class="masthead-heading text-uppercase">1,000,000+ </div>
+        <h3 class="section-subheading">
+            Total papers with mentions of "biomarker" listed in PubMed
+        </h3>
+        
+        <form>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search...">
+              <button class="btn-primary" style="border-radius: 15px;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+        </form>
+
+    </div>
+</header>
+
+ 
+<style>
+/* placer search bar dans une grille grid */
+form{
+display: grid;
+grid-template-rows: 30vh;
+}
+
+/* centrer la search bar sur la page entière, ajouter un border à la class="form-group" */
+.form-group{
+justify-self: center;
+align-self: center;
+border: 3px solid #00AAE7;
+background-color: #fff;
+width: 420px;
+border-radius: 26px;
+padding: 5px 15px;
+}
+
+/* appliquer une width et une height à l'input */
+.form-control{
+width: 350px;
+height: 40px;
+border : none;
+}
+
+/* placer une icone search à droite de l'input  */
+button{
+float: right;
+width: 34px;
+height: 36px;
+margin-top: -40px;
+margin-right: -5px;
+border: none;
+background: #fff;
+}
+
+/* solution temporaire pour supprimer la surbrillance bleue lorsque l'input est sélectionné */
+input[type="text"]{
+outline: none;
+box-shadow: none !important;
+}
+</style>
+
+</body>
+</html>
