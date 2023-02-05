@@ -58,19 +58,12 @@
                 </h3>
             </div>
         </div>
-    </div>
-
   <style>
     .outBoxRight{
-        z-index: 5; 
-        position: fixed;
-        bottom: 0px; right: 0px; 
         background-color: #fff; 
         text-align: left;
-        width: 100%;
         display: flex;
         flex-wrap: wrap;
-        float: right;
     }
     .box{
         border: 1px solid #00AAE7; 
@@ -82,9 +75,8 @@
         max-height: 350px;
     }
   </style>
-    <div class="container">
         <div class="outBoxRight">
-            <div class="box" style="margin-left: 20px;">
+            <div class="box">
                 <h3 class="section-subheading text-muted">
                     Biomarker Name: 
                     <span id="BiomarkerName">##########</span>
@@ -103,109 +95,85 @@
                     <a class="btn btn-primary btn-xl text-uppercase" href="#services">View details</a>
                 </div> 
             </div>
-            <div class="box" style="width: 1000px;">
+            <div class="box" style="width: 66%; overflow: scroll;">
+                <style>
+                    li a {
+                        margin: 5px;
+                    }
+                </style>
                     <ul class="section-subheading text-muted" style="display: flex;
                     flex-flow: wrap column;
-                    max-height: 300px; list-style: none;">
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
-						<li><a href="">Link</a></li>
+                    max-height: 350px; list-style: none;">
+						<li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+						<li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+						<li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+                        <li><a class="btn btn-primary" href="">Link</a></li>
+					
 					</ul>
                 </h3>
             </div>
